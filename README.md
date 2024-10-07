@@ -7,15 +7,15 @@
   
 ### Supports:
     
-   #### -left: 
-    username, 
-    git branch, 
-    root, 
+   #### --left: 
+    username
+    git branch
+    root 
     git status 
         
-   #### -right: 
-    RAM usage, 
+   #### --right
+    RAM usage 
     execution time 
 
-   #### -left 2nd line: 
-    ##### path.
+   #### --left 2nd line
+    path
