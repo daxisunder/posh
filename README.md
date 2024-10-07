@@ -1,8 +1,11 @@
-OhMyPosh prompt theme for PowerShell!
+Custom OhMyPosh prompt theme for PowerShell!
 
   Doubleline, both left and right prompt.
+
+![image](https://github.com/user-attachments/assets/59aada91-33ea-4ebe-87e2-256241baf49a)
+
   
-  supports:
+  Supports:
     
   left: - username
         - git branch
@@ -13,5 +16,3 @@ OhMyPosh prompt theme for PowerShell!
          -execution time
 
   left 2nd line: - path
-
-More funcionality will be added.
