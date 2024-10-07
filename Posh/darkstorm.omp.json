@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#88ff22",
+          "style": "plain",
+          "template": "<#00FFFF>\u250f[</>{{ .UserName }}<#00FFFF>]</>",
+          "type": "session"
+        },
+        {
+          "foreground": "#88ff22",
+          "style": "plain",
+          "template": "<#00FFFF>[</>{{ .HEAD }}<#00FFFF>]</>",
+          "type": "git"
+        },
+        {
+          "foreground": "#880022",
+          "style": "plain",
+          "template": "<#00FFFF>[</>\uf0e7<#00FFFF>]</>",
+          "type": "root"
+        },
+        {
+          "foreground": "#ffff22",
+          "style": "plain",
+          "template": "<#00FFFF>[x</>{{ reason .Code }}<#00FFFF>]</>",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "#00FFFF",
+          "style": "diamond",
+          "template": "RAM:{{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB ",
+          "trailing_diamond": " ",
+          "type": "sysinfo"
+        },
+        {
+          "foreground": "#88ff22",
+          "leading_diamond": "\u250b",
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },  
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#ffffff",
+          "properties": {
+            "style": "full"
+          },
+          "style": "plain",
+          "template": "<#00FFFF>\u2516[</>{{ .Path }}<#00FFFF>]></>",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
